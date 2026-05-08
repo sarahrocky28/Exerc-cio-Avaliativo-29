@@ -1,132 +1,201 @@
-* , ::before, ::after{
+*, ::before, ::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
-body{
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
 }
-h1{
+
+
+.container0 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 10px;
+    color: rgb(5, 5, 146);
+    padding: 8px 16px; 
+    border-bottom: 2px solid rgb(5, 5, 146); 
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.botoes a {
+    text-decoration: none; 
+    color: rgb(5, 5, 146);
+}
+
+.container01 {
+    padding: 10px 16px; 
+    display: flex;
     align-items: center;
-    font-size: 30px;
-    margin: 50px;
-    padding: 150px;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+.container01:hover {
+    background-color: rgba(5, 5, 146, 0.1); 
+}
+
+.ativo {
+    border: 1px solid rgb(5, 5, 146);
+    background-color: rgb(5, 5, 146);
+    color: aliceblue;
+    border-radius: 8px;
+}
+
+#logo {
+    padding: 5px;
+    margin: 5px;
+}
+
+.container1 {
+    background-color: rgb(6, 46, 37);
+    padding: 50px;
+}
+
+h1 {
+    font-size: 40px;
     color: aliceblue;
     display: flex;
     justify-content: center;
-}
-.container1{
-    background-color: rgb(6, 46, 37);
-    padding: 75px;
+    align-items: center;
+  
 }
 
 
-footer{
+.TextoNoMeio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+}
+
+#TituloTexto {
+    font-size: 30px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container21 {
+    width: 300px;
+    min-height: 380px; 
+    text-align: center;
+    border: 1px solid rgb(212, 204, 204);
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(129, 129, 129, 0.3);
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+h2 {
+    color: black;
+    padding: 15px;
+}
+
+img {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+    border: none;
+    background-color: rgb(30, 153, 30);
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: rgb(20, 120, 20); 
+}
+
+
+.SigaparaMais {
+    background-color: rgb(192, 198, 204);
+    padding: 10px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.Site {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 25px;
+    align-items: center;
+}
+
+
+.Parede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 238, 240);
+    flex: 1; 
+    width: 100%;
+}
+
+.Sobre {
+    width: 90%; 
+    max-width: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 3px 2px #ccc;
+}
+
+#Título {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 6px;
+}
+
+#Paragrafo,
+#para {
+    padding: 10px;
+    text-align: center;
+}
+
+
+footer {
     padding: 20px;
     background-color: black;
     color: aliceblue;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0;
+    margin-top: auto; 
 }
-
-.SigaparaMais{
-    background-color: rgb(192, 198, 204);
-    padding: 5px;
-    justify-items: center;
-    flex-direction: row-reverse;
-}
-
-.Site{
-   display: flex;
-    flex-direction: row;
-    padding: 10px;
-    margin: 10px;
-    gap: 25px;
-    display: flex;
-    
-}
-
-h2{
-    color: black;
-    padding: 15px;
-}
-
-.container21{
-    width: 300px;
-    height: 380px;
-    text-align: center;
-    border: 1px solid rgb(212, 204, 204);
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 3px 0px 0px 3px rgba(129, 129, 129, 0.226);
-    
-}
-
-.container2{
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    margin: 20px;
-    gap: 25px;
-    display: flex;
-    overflow: hidden;
-     align-items: center;
-    justify-content: center;
-
-}
-
-img{
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-button{
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    color: aliceblue;
-    border: 1px solid aliceblue;
-    background-color: rgb(30, 153, 30);
-
-}
-
-.container01{
-    width: 30px;
-    height: 5px;
-    margin: 10px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container0{
-    flex-direction: row;
-    gap: 10px;
-    display: flex;
-    color: rgb(5, 5, 146);
-    border-radius: 10px;
-    justify-content: space-between;
-}
-
-.ativo{
-border: 1px solid rgb(5, 5, 146);
-    background-color:rgb(5, 5, 146);
-    color: aliceblue;
-    border-radius: 10px;
-}
-
-.botoes{
-    display: flex;
-    flex-direction: row;
-}
-#logo{
-    padding: 5px;
-    margin: 5pxs;
-}
-

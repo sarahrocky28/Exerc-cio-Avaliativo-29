@@ -1,0 +1,133 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+/* ── NAVBAR ── */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: rgb(5, 5, 146);
+    border-bottom: 2px solid rgb(5, 5, 146);
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.botoes a {
+    text-decoration: none;
+    color: rgb(5, 5, 146);
+}
+
+.container01 {
+    width: 80px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container01:hover {
+    background-color: rgba(5, 5, 146, 0.1);
+}
+
+.container01.ativo {
+    background-color: rgb(5, 5, 146);
+    color: white;
+}
+
+.container01.ativo:hover {
+    background-color: rgb(5, 5, 180);
+}
+
+/* ── MAIN CONTENT ── */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.FaleConosco {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#Contato {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.FaleConosco input,
+.FaleConosco textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.FaleConosco input:focus,
+.FaleConosco textarea:focus {
+    border-color: rgb(5, 5, 146);
+}
+
+.FaleConosco textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#submitButton {
+    background-color: rgb(5, 5, 146);
+    color: white;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+#submitButton:hover {
+    background-color: rgb(5, 5, 180);
+}
+
+/* ── FOOTER ── */
+footer {
+    padding: 20px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
