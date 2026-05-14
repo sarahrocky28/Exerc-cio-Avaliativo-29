@@ -1,0 +1,52 @@
+#Topo{
+    background-color: rgb(5, 5, 146);
+    color: aliceblue;
+    font-size: 25px;
+    padding: 15px;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh; 
+    display: flex;
+    
+}
+
+nav{
+    flex-direction: column;
+}
+
+#Consultarproduto{
+    border: 1px solid rgb(5, 5, 146);
+    background-color: rgb(5, 5, 146);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 7px ;
+}
+
+#Sair{
+    background-color: rgb(216, 136, 15);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+    color: aliceblue;
+    border: 1px solid rgb(216, 136, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+   
+.Topototal{
+    flex-direction: row;
+}
+
+.CaixaBem{
+    border: 1px solid black;
+}

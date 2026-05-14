@@ -1,3 +1,4 @@
+/*Geral*/
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -10,9 +11,8 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-
-.container0 {
+/*Topo da página*/
+.PáginaseLogo {
     display: flex;
     flex-direction: row;
     align-items: center; 
@@ -21,6 +21,11 @@ body {
     color: rgb(5, 5, 146);
     padding: 8px 16px; 
     border-bottom: 2px solid rgb(5, 5, 146); 
+}
+
+#logo {
+    padding: 5px;
+    margin: 5px;
 }
 
 .botoes {
@@ -33,7 +38,7 @@ body {
     color: rgb(5, 5, 146);
 }
 
-.container01 {
+.Abaspágina {
     padding: 10px 16px; 
     display: flex;
     align-items: center;
@@ -43,7 +48,7 @@ body {
     white-space: nowrap; 
 }
 
-.container01:hover {
+.Abaspágina:hover {
     background-color: rgba(5, 5, 146, 0.1); 
 }
 
@@ -54,12 +59,16 @@ body {
     border-radius: 8px;
 }
 
-#logo {
-    padding: 5px;
-    margin: 5px;
+#BotãodeLogin{
+    color: aliceblue;
+    background-color: rgb(31, 163, 31);
+    padding: 3px;
+    margin: 0;
+    
 }
 
-.container1 {
+/*Container bombas hidráulicas*/
+.containerGrande {
     background-color: rgb(6, 46, 37);
     padding: 50px;
 }
@@ -73,7 +82,7 @@ h1 {
   
 }
 
-
+/*Nossas soluções*/
 .TextoNoMeio {
     display: flex;
     justify-content: center;
